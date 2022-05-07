@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="description" content="Directum мероприятия">
-	<title>Directum мероприятия</title>
+	<title>Directum мероприятие</title>
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
+	<header class="b-header">
+		<img class="header__logo" width="142" height="142" src="public/images/Directum_logo.svg" alt="Логотип Directum">
+		<h1 class="header__title text-default text-semiBold text-align-center text-white">
+			Название мероприятия
+		</h1>
+		<span class="header__date text-default text-semiBold text-white">
+			4 МАЯ 2049
+		</span>
+		<span class="header__text text-default text-semiBold text-white">
+			в самом сердце страны
+		</span>
+	</header>
 	<main class="page">
-		<header class="page__header">
-			<img class="header__logo" src="public/images/Directum_logo.svg" alt="Логотип Directum">
-			<h1 class="header__title">Название мероприятия</h1>
-			<span class="header__date">4 МАЯ 2049</span>
-			<span class="header__text">в самом сердце страны</span>
-		</header>
-		<section class="page__text">
-
+		<section class="page__text-part">
+			<div class="greeting__container text-align-center">
+				<p class="greeting__title text-default">Дорогие друзья!</p>
+				<p class="text-default">
+					<span class="text-semiBold">Lorem ipsum</span> dolor sit amet,
+					consectetur adipiscing elit, sed do eiusmod tempor incididunt
+					ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+					ea commodo consequat. Duis aute irure dolor in reprehenderit
+					in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p>
+				<p class="text-default">
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+					officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			<div class="reg-form__container">
+				<h2 class="reg-form__title text-default text-semiBold text-align-center">Регистрация</h2>
+				<p class="text-default">
+					Пожалуйста, проверьте правильность введенных данных:
+				</p>
+				<form class="reg-form__wrapper">
+					<div class="reg-input__container">
+						<label class="reg-label text-default" for="full-name">ФИО:</label>
+						<input class="b-input text-default" name="full-name" id="full-name" type="text" placeholder="ФИО" value="Иванов Иван Иванович">
+					</div>
+					<div class="reg-input__container">
+						<label class="reg-label text-default" for="work-location">Место работы:</label>
+						<input class="b-input text-default" name="work-location" id="work-location" type="text" placeholder="Место работы" value="DIRECTUM">
+					</div>
+					<div class="reg-input__container">
+						<label class="reg-label text-default" for="email">E-mail:</label>
+						<input class="b-input text-default" name="email" id="email" type="email" placeholder="E-mail" value="ivanov_ii@directum.ru">
+					</div>
+				</form>
+			</div>
 		</section>
 		<section class="page__items">
 
