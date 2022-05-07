@@ -264,3 +264,26 @@ html, body {
 	margin: 0;
 	font-style: italic;
 }
+
+.page__footer {
+	padding: 45px 0;
+	background: #F8F9FA;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.page__footer {
+		padding: 20px 0;
+	}
+}
+
+.footer__text {
+	margin: 1rem 0 0;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	color: #BABABA;
+}
