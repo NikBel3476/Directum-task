@@ -235,19 +235,24 @@ html, body {
 	}
 }
 
-.items__title {}
-
 .items__container {
 	max-width: 1200px;
+	margin-top: 1.5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	gap: 1.5rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.items__container {
+		gap: 1.5rem 20px;
+	}
 }
 
 .b-item {
 	max-width: 217px;
-	margin: 1.5rem 1rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
